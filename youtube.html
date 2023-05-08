@@ -1,0 +1,83 @@
+<body>
+
+    <div class="contenedor-grid">
+        <div class="topbar">
+        <img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1200px-YouTube_Logo_2017.svg.png">
+           <input type="text" placeholder="Buscar">
+            <input type="button" value="Buscar">
+        </div>
+        
+        <div class="tags">
+        <div class="caja1"><a href="url">Hogar</a></div>
+        <div class="caja1"><a href="url">Pastelería</a></div>
+        <div class="caja1"><a href="url">Jardinería</a></div>
+        <div class="caja1"><a href="url">Costuras</a></div></div>
+        
+        
+        
+        
+        <div class="sidebar">
+        <button class="sidebar-button" type="button">Biblioteca</button>
+        <button class="sidebar-button" type="button">Favoritos</button>
+        <button class="sidebar-button" type="button">Ver más tarde</button>
+        </div>
+        
+        
+        <div class="vids">
+        
+        <div class="caja2"><img width="200px" src="https://i.ytimg.com/vi/0t76yObGyro/hqdefault.jpg"/><h2>Modern to Retro Challenge</h2> <img src="https://yt3.ggpht.com/ytc/AGIKgqPUTc9dlQMN1rKilmdBw_qMNVwUreq3Eemne_gB6w=s68-c-k-c0x00ffffff-no-rj"> <p>Rachel Masky</p></div>
+        <div class="caja2"><img width="200px" src="https://i.ytimg.com/vi/GRvM2IRuYyI/hq720.jpg"/><h2>Lo que como en unos días</h2><img src="https://yt3.ggpht.com/ytc/AGIKgqPs3iUInao7fExYZf0NJCsfeKt8KLGQsyFx-ChD=s68-c-k-c0x00ffffff-no-rj"> <p>Usako</p></div>
+        <div class="caja2"><img width="200px" src="https://i.ytimg.com/vi/d-yWg2AQdlc/hq720.jpg"/><h2>Hacer mermelada de mandarina: una receta fácil</h2><img src="https://yt3.ggpht.com/ytc/AGIKgqN6FnB73foATy_uAwi9JdSmBASaPv41giwQkMaFWw=s48-c-k-c0x00ffffff-no-rj">  <p>Country Life Vlog</p></div>
+        <div class="caja2"><img width="200px" src="https://i.ytimg.com/vi/revRr7PCVSI/hqdefault.jpg"/><h2>Earthcrosser</h2><img src="https://yt3.ggpht.com/ytc/AGIKgqP_Yj72IcPb6D-F_4qMIY1YCG6D5TX7DOTIlyBg=s48-c-k-c0x00ffffff-no-rj">  <p>
+        Veruca Salt
+        </p></div>
+        
+        
+        
+        
+        
+        
+        </div>
+        </div>
+        
+</body>
+
+<style>
+
+div{
+  padding:5px;
+}
+
+.contenedor-grid{
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  gap:5px;
+  grid-template-areas:
+  "z z z z"
+  "e a a a"
+  "e b b b";}
+
+.topbar{grid-area: z;}
+.sidebar-button{margin:10px;display:block;}
+.sidebar-button:hover{background-color:#afdbd4;}
+.sidebar{grid-area: e;}
+.caja1{background:black; color:white; }
+a {text-decoration: none;color:white; }
+a:hover{color:grey}
+
+.tags{grid-area: a;display:inline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;}
+  
+ .vids{grid-area: b;display:block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;}
+.caja2{width:300px;}
+  
+
+  
+</style>
